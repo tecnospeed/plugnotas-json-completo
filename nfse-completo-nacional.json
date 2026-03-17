@@ -1,0 +1,650 @@
+{
+  "padrao": "NACIONAL",
+  "idLote": "lote-001",
+  "valorServicos": 1000,
+  "valorLiquidoNfse": 950,
+  "valorTotalServicos": 1000,
+  "valorTotalBaseCalculo": 1000,
+  "descontoIncondicionado": 50,
+  "descontoCondicionado": 0,
+  "outrosDescontos": 0,
+  "valorDesconto": 0,
+  "enderecoInformado": true,
+  "notaRepasse": false,
+  "substituicao": false,
+  "idNotaSubstituida": null,
+  "informacoesComplementares": "Informações complementares da nota",
+  "descricao": "Descrição do RPS",
+  "naturezaTributacao": 1,
+  "aliquotaSimplesNacional": 5,
+  "aliquotaServico": 5,
+  "retidoPis": false,
+  "retidoCofins": false,
+  "retidoInss": false,
+  "retidoIr": false,
+  "retidoCsll": false,
+  "retidoCpp": false,
+  "retidoOutrasRetencoes": false,
+  "regimeApuracaoTributaria": 1,
+  "issRetidoIntermediario": false,
+  "descontoIncondicionadoServico": 0,
+  "paisPrestacao": "1058",
+  "cidadePrestacaoServico": "São Paulo",
+  "estadoPrestacaoServico": "SP",
+  "cepPrestacaoServico": "01310-100",
+  "enderecoPrestacaoServico": "Avenida Paulista",
+  "cidadePrestacao": {
+    "descricao": "São Paulo",
+    "estado": "SP",
+    "cep": "01310-100",
+    "bairro": "Bela Vista",
+    "numero": "1000",
+    "complemento": "Andar 10",
+    "logradouro": "Avenida Paulista"
+  },
+  "modoEnvio": "1",
+  "versao": "2",
+  "versaoEsquema": "1",
+  "internal": {
+    "id": "ID-INTEGRACAO-001",
+    "olimpo": false,
+    "dataEmissaoHorarioAtual": false
+  },
+  "emitente": {
+    "tipo": 1,
+    "codigoCidade": "3550308"
+  },
+  "prestador": {
+    "cpfCnpj": "12345678000195",
+    "inscricaoMunicipal": "12345678",
+    "razaoSocial": "Empresa Prestadora Ltda",
+    "simplesNacional": false,
+    "dataVigenciaSimplesNacional": "2024-01-01",
+    "anexoSimplesNacional": "III",
+    "incentivadorCultural": false,
+    "regimeTributarioEspecial": 1,
+    "incentivoFiscal": false,
+    "inscricaoEstadual": "123456789",
+    "email": "prestador@empresa.com.br",
+    "codigoDistrito": "3550308",
+    "telefone": {
+      "ddd": "11",
+      "numero": "999999999"
+    },
+    "endereco": {
+      "tipoLogradouro": "Avenida",
+      "logradouro": "Paulista",
+      "numero": "1000",
+      "complemento": "Sala 101",
+      "tipoBairro": "Bairro",
+      "bairro": "Bela Vista",
+      "codigoCidade": "3550308",
+      "descricaoCidade": "São Paulo",
+      "estado": "SP",
+      "cep": "01310-100"
+    },
+    "config": {
+      "prefeitura": {
+        "receitaBruta": 500000,
+        "lei": "16.757",
+        "dataInicio": "2018-01-01"
+      }
+    }
+  },
+  "tomador": {
+    "cpfCnpj": "98765432000100",
+    "razaoSocial": "Empresa Tomadora S/A",
+    "inscricaoEstadual": "987654321",
+    "inscricaoMunicipal": "87654321",
+    "email": "tomador@empresa.com.br",
+    "orgaoPublico": false,
+    "nif": "NIF-ESTRANGEIRO-001",
+    "naoNif": "Motivo ausência NIF",
+    "documentoTomadorEstrangeiro": "DOC-ESTRANGEIRO-001",
+    "codigoEstrangeiro": "COD-EST-001",
+    "telefone": {
+      "ddd": "11",
+      "numero": "988888888"
+    },
+    "endereco": {
+      "tipoLogradouro": "Rua",
+      "logradouro": "das Flores",
+      "numero": "200",
+      "complemento": "Apto 5",
+      "tipoBairro": "Bairro",
+      "bairro": "Centro",
+      "codigoCidade": "3550308",
+      "descricaoCidade": "São Paulo",
+      "estado": "SP",
+      "cep": "01001-000",
+      "codigoPais": "1058"
+    }
+  },
+  "intermediario": {
+    "cpfCnpj": "11122233000155",
+    "razaoSocial": "Intermediário Serviços Ltda",
+    "inscricaoMunicipal": "11223344",
+    "inscricaoEstadual": "112233445",
+    "email": "intermediario@empresa.com.br",
+    "nif": "NIF-INTERMEDIARIO-001",
+    "naoNif": "Motivo ausência NIF intermediário",
+    "telefone": {
+      "numero": "1133334444"
+    },
+    "endereco": {
+      "logradouro": "Rua dos Intermediários",
+      "numero": "50",
+      "complemento": "Sala 2",
+      "bairro": "Vila Nova",
+      "codigoCidade": "3550308",
+      "estado": "SP",
+      "cep": "02020-020",
+      "codigoPais": "1058"
+    }
+  },
+  "rps": {
+    "tipo": 1,
+    "serie": "A",
+    "numero": 1,
+    "dataEmissao": "2024-03-01T10:00:00.000Z",
+    "dataEmissaoTz": "-03:00",
+    "dataVencimento": "2024-03-31T10:00:00.000Z",
+    "competencia": "2024-03-01T00:00:00.000Z",
+    "competenciaTz": "-03:00"
+  },
+  "cargaTributaria": {
+    "valor": 150,
+    "percentual": 15,
+    "fonte": "IBPT"
+  },
+  "beneficioMunicipal": {
+    "numero": "12345",
+    "reducao": {
+      "valor": 100,
+      "valorPercentual": 10
+    }
+  },
+  "repasse": {
+    "valor": 200
+  },
+  "camposPrefeitura": {
+    "campo1": "valor1",
+    "campo2": "valor2"
+  },
+  "parcelas": [
+    {
+      "tipoPagamento": 1,
+      "numero": 1,
+      "dataVencimento": "2024-04-01T00:00:00.000Z",
+      "valor": 500
+    },
+    {
+      "tipoPagamento": 1,
+      "numero": 2,
+      "dataVencimento": "2024-05-01T00:00:00.000Z",
+      "valor": 500
+    }
+  ],
+  "despesas": [
+    {
+      "descricao": "Despesa com material",
+      "data": "2024-03-01T00:00:00.000Z",
+      "valor": 100
+    }
+  ],
+  "deducao": [
+    {
+      "forma": 1,
+      "tipo": 1,
+      "cpfCnpjReferencia": "11111111000111",
+      "numeroNFReferencia": "NF-001",
+      "valorTotalReferencia": 200,
+      "percentualDeduzir": 10,
+      "valorDeduzir": 50,
+      "razaoSocialReferencia": "Fornecedor de Material Ltda",
+      "dataNFReferencia": "2024-02-15T00:00:00.000Z",
+      "itens": [
+        {
+          "descricao": "Item dedução 1",
+          "valor": 50
+        }
+      ]
+    }
+  ],
+  "servico": [
+    {
+      "codigo": "14.01",
+      "cnae": "6201500",
+      "codigoNbs": "1.0307.00.00",
+      "codigoServicoNacional": "14.01",
+      "codigoNcm": "8471.30",
+      "codigoTributacao": "14010100",
+      "codigoContribuinte": "CONTRIB-001",
+      "discriminacao": "Serviço de desenvolvimento de sistemas de computação",
+      "quantidade": 1,
+      "unidade": "UN",
+      "tributavel": true,
+      "dataPagamento": "2024-03-10T00:00:00.000Z",
+      "codigoCidadeIncidencia": "3550308",
+      "responsavelRetencao": 1,
+      "iss": {
+        "tipoTributacao": 1,
+        "tipoRetencao": 1,
+        "situacaoTributaria": 1,
+        "exigibilidade": 1,
+        "aliquota": 5,
+        "valor": 50,
+        "retido": false,
+        "valorRetido": 0,
+        "tipoImunidade": 1,
+        "processoSuspensao": "PROC-2024-001"
+      },
+      "valor": {
+        "servico": 1000,
+        "unitario": 1000,
+        "baseCalculo": 1000,
+        "liquido": 950,
+        "deducoes": 0,
+        "descontoIncondicionado": 50,
+        "descontoCondicionado": 0,
+        "ipi": 0,
+        "multa": 0,
+        "juros": 0,
+        "percentualDeducoes": 0
+      },
+      "retencao": {
+        "tipoRetencaoPisCofinsCSLL": "1",
+        "valorTotalRetencoes": 30,
+        "pis": {
+          "valor": 6.5,
+          "aliquota": 0.65,
+          "baseCalculo": 1000,
+          "retido": false,
+          "cst": "01"
+        },
+        "cofins": {
+          "valor": 30,
+          "aliquota": 3,
+          "baseCalculo": 1000,
+          "retido": false,
+          "cst": "01"
+        },
+        "inss": {
+          "valor": 110,
+          "aliquota": 11,
+          "baseCalculo": 1000,
+          "retido": false
+        },
+        "irrf": {
+          "valor": 15,
+          "aliquota": 1.5,
+          "baseCalculo": 1000,
+          "retido": false
+        },
+        "csll": {
+          "valor": 10,
+          "aliquota": 1,
+          "baseCalculo": 1000,
+          "retido": false
+        },
+        "cpp": {
+          "valor": 20,
+          "aliquota": 2,
+          "retido": false
+        },
+        "outrasRetencoes": {
+          "valor": 5,
+          "retido": false
+        }
+      },
+      "deducao": {
+        "tipo": 1,
+        "descricao": "Justificativa da dedução do serviço"
+      },
+      "obra": {
+        "nome": "Obra Residencial XYZ",
+        "art": "ART-2024-001",
+        "cei": "CEI-123456",
+        "inscricaoImobFisc": "INSCR-IMO-001",
+        "inf": "Informações adicionais da obra",
+        "opcao": 1,
+        "codigo": "OBRA-COD-001",
+        "endereco": {
+          "logradouro": "Rua da Construção",
+          "numero": "300",
+          "bairro": "Jardim Industrial",
+          "complemento": "Terreno A",
+          "codigoCidade": "3550308",
+          "descricaoCidade": "São Paulo",
+          "estado": "SP",
+          "cep": "04310-000",
+          "codigoPais": "1058",
+          "regiao": "Sudeste"
+        }
+      },
+      "evento": {
+        "id": "EVT-2024-001",
+        "descricao": "Show de música ao vivo",
+        "atividade": "Entretenimento",
+        "dataInicio": "2024-03-15T00:00:00.000Z",
+        "dataFim": "2024-03-16T00:00:00.000Z",
+        "endereco": {
+          "cep": "01310-200",
+          "codigoCidade": "3550308",
+          "estado": "SP",
+          "bairro": "Bela Vista",
+          "logradouro": "Avenida Paulista",
+          "numero": "900",
+          "complemento": "Auditório",
+          "descricaoCidade": "São Paulo",
+          "regiao": "Sudeste"
+        }
+      },
+      "infExterior": {
+        "modoPrestacao": 1,
+        "vinculoPrestacao": 1,
+        "tipoMoeda": "USD",
+        "valorServicos": 200,
+        "tipoFomentoPrestador": "1",
+        "tipoFomentoTomador": "1",
+        "tipoMovimentacaoBens": 1,
+        "numeroDeclaracaoImp": "DI-2024-001",
+        "numeroRegistroExp": "RE-2024-001",
+        "tipoMDIC": 1,
+        "categoriaServico": "1",
+        "tipoObjeto": "SOFTWARE",
+        "extensaoObjeto": ".exe",
+        "numeroPostes": "10"
+      },
+      "infPedagio": {
+        "tipoVeiculoCobranca": 1,
+        "numeroEixos": 2,
+        "tipoRodagem": 1,
+        "sentidoGeografico": "Norte-Sul",
+        "placaVeiculo": "ABC1234",
+        "codigoAcessoPedido": "ACESSO-001",
+        "codigoContratoPedido": "CONTRATO-001"
+      },
+      "locacao": {
+        "descricao": "Locação de equipamento industrial",
+        "quantidade": 5
+      },
+      "ibscbs": {
+        "finalidadeNFSe": 1,
+        "operacaoPessoal": false,
+        "codigoOperacao": "OP-001",
+        "tipoOperacao": 1,
+        "tipoEnteGovernamental": 1,
+        "descTipoEnteGovernamental": "Descrição do tipo ente governamental",
+        "municipioIncidencia": "3550308",
+        "PagamentoParceladoAntecipado": false,
+        "referenciasNFSe": [
+          {
+            "chave": "CHAVE-NFSE-REF-001"
+          }
+        ],
+        "destinatario": {
+          "indicador": 1,
+          "cpfCnpj": "22233344000122",
+          "nif": "NIF-DEST-001",
+          "naoNif": "Motivo ausência NIF destinatário",
+          "razaoSocial": "Destinatário IBS/CBS Ltda",
+          "codigoEstrangeiro": "COD-EST-DEST-001",
+          "email": "destinatario@empresa.com.br",
+          "telefone": {
+            "ddd": "11",
+            "numero": "977777777"
+          },
+          "endereco": {
+            "logradouro": "Rua do Destinatário",
+            "numero": "100",
+            "complemento": "Bloco B",
+            "bairro": "Vila Destinatário",
+            "codigoCidade": "3550308",
+            "descricaoCidade": "São Paulo",
+            "cep": "05050-050",
+            "codigoPais": "1058",
+            "codigoPostalExterior": "10001",
+            "estadoProvinciaRegiao": "SP",
+            "estado": "SP",
+            "regiao": "Sudeste"
+          }
+        },
+        "imovel": {
+          "inscricaoFiscal": "INSCR-FISCAL-001",
+          "codigoCIB": "CIB-001",
+          "codigoObra": "OBRA-IMOVEL-001",
+          "endereco": {
+            "logradouro": "Rua do Imóvel",
+            "numero": "400",
+            "complemento": "Casa 2",
+            "bairro": "Vila Imóvel",
+            "cep": "06060-060",
+            "codigoCidade": "3550308",
+            "descricaoCidade": "São Paulo",
+            "estado": "SP",
+            "codigoPais": "1058",
+            "estadoProvinciaRegiao": "SP",
+            "codigoPostalExterior": "10001",
+            "regiao": "Sudeste"
+          }
+        },
+        "valores": {
+          "baseCalculo": 1000,
+          "aliquotaIbsMunicipal": 2,
+          "aliquotaIbsEstadual": 3,
+          "aliquotaCbs": 5,
+          "valorIbsMunicipal": 20,
+          "valorIbsEstadual": 30,
+          "valorCbs": 50,
+          "tributacao": {
+            "cst": "01",
+            "cct": "CCT-001",
+            "codigoCreditoPresumido": "CRED-PRES-001",
+            "regular": {
+              "cst": "01",
+              "cct": "CCT-REG-001"
+            },
+            "diferimento": {
+              "percentualEstadual": 10,
+              "percentualMunicipal": 10,
+              "percentualCBS": 5
+            }
+          },
+          "operacao": {
+            "documentosReferenciados": [
+              {
+                "nacional": {
+                  "tipoChave": 1,
+                  "descricaoChave": "Descrição chave DFe",
+                  "chave": "CHAVE-DFe-001"
+                },
+                "fiscal": {
+                  "codigoCidade": "3550308",
+                  "numero": "NF-FISCAL-001",
+                  "descricao": "Nota fiscal referenciada"
+                },
+                "naoFiscal": {
+                  "numero": "DOC-NAOFISCAL-001",
+                  "descricao": "Documento não fiscal referenciado"
+                },
+                "fornecedor": {
+                  "cpfCnpj": "33344455000133",
+                  "nif": "NIF-FORN-001",
+                  "naoNif": "Motivo ausência NIF fornecedor",
+                  "razaoSocial": "Fornecedor Referenciado Ltda"
+                },
+                "dataEmissao": "2024-02-01T00:00:00.000Z",
+                "competencia": "2024-02-01T00:00:00.000Z",
+                "tipoOperacao": 1,
+                "descricaoOperacao": "Descrição do valor dedutível",
+                "valorOperacao": 100
+              }
+            ]
+          },
+          "resumo": {
+            "ibsMunicipal": {
+              "percentualReducao": 5,
+              "aliquotaEfetiva": 1.9
+            },
+            "ibsEstadual": {
+              "percentualReducao": 5,
+              "aliquotaEfetiva": 2.85
+            },
+            "cbsFederal": {
+              "percentualReducao": 5,
+              "aliquotaEfetiva": 4.75
+            },
+            "totalizador": {
+              "valorIbsCbs": 100,
+              "percentualReducaoIbsCbs": 5,
+              "valorDeducoesIbsCbs": 10,
+              "ibs": {
+                "valor": 50,
+                "valorDiferimentoMunicipal": 5,
+                "valorDiferimentoEstadual": 5,
+                "percentualCreditoPresumido": 2,
+                "valorCreditoPresumido": 10
+              },
+              "cbs": {
+                "valorDiferimento": 5,
+                "percentualCreditoPresumido": 2,
+                "valorCreditoPresumido": 10
+              },
+              "regular": {
+                "aliquotaEfetivaEstadual": 2.85,
+                "aliquotaEfetivaMunicipal": 1.9,
+                "valorIbsMunicipal": 19,
+                "valorIbsEstadual": 28.5,
+                "aliquotaEfetivaCbs": 4.75,
+                "valorCbs": 47.5
+              },
+              "compraGovernamental": {
+                "percentualIbsMunicipal": 10,
+                "valorIbsMunicipal": 2,
+                "percentualIbsEstadual": 10,
+                "valorIbsEstadual": 3,
+                "percentualCbs": 10,
+                "valorCbs": 5,
+                "percentualReducao": 5,
+                "valorPercentualReducao": 0.5
+              }
+            }
+          }
+        }
+      },
+      "tributacaoTotal": {
+        "federal": {
+          "valor": 60,
+          "valorPercentual": 6
+        },
+        "estadual": {
+          "valor": 30,
+          "valorPercentual": 3
+        },
+        "municipal": {
+          "valor": 50,
+          "valorPercentual": 5
+        },
+        "aliquotaSimplesNacional": 5
+      }
+    },
+    {
+      "codigo": "17.01",
+      "cnae": "7319099",
+      "codigoNbs": "1.0503.00.00",
+      "codigoServicoNacional": "17.01",
+      "codigoNcm": null,
+      "codigoTributacao": "17010101",
+      "codigoContribuinte": "CONTRIB-002",
+      "discriminacao": "Serviço de assessoria e consultoria de informática",
+      "quantidade": 2,
+      "unidade": "HH",
+      "tributavel": true,
+      "dataPagamento": null,
+      "codigoCidadeIncidencia": "3550308",
+      "responsavelRetencao": 1,
+      "iss": {
+        "tipoTributacao": 1,
+        "tipoRetencao": 1,
+        "situacaoTributaria": 1,
+        "exigibilidade": 1,
+        "aliquota": 5,
+        "valor": 25,
+        "retido": false,
+        "valorRetido": 0,
+        "tipoImunidade": null,
+        "processoSuspensao": null
+      },
+      "valor": {
+        "servico": 500,
+        "unitario": 250,
+        "baseCalculo": 500,
+        "liquido": 475,
+        "deducoes": 0,
+        "descontoIncondicionado": 25,
+        "descontoCondicionado": 0,
+        "ipi": 0,
+        "multa": 0,
+        "juros": 0,
+        "percentualDeducoes": 0
+      },
+      "retencao": {
+        "tipoRetencaoPisCofinsCSLL": null,
+        "valorTotalRetencoes": 0,
+        "pis": {
+          "valor": 3.25,
+          "aliquota": 0.65,
+          "baseCalculo": 500,
+          "retido": false,
+          "cst": "01"
+        },
+        "cofins": {
+          "valor": 15,
+          "aliquota": 3,
+          "baseCalculo": 500,
+          "retido": false,
+          "cst": "01"
+        },
+        "inss": {
+          "valor": 0,
+          "aliquota": 0,
+          "baseCalculo": 0,
+          "retido": false
+        },
+        "irrf": {
+          "valor": 0,
+          "aliquota": 0,
+          "baseCalculo": 0,
+          "retido": false
+        },
+        "csll": {
+          "valor": 0,
+          "aliquota": 0,
+          "baseCalculo": 0,
+          "retido": false
+        },
+        "cpp": {
+          "valor": 0,
+          "aliquota": 0,
+          "retido": false
+        },
+        "outrasRetencoes": {
+          "valor": 0,
+          "retido": false
+        }
+      },
+      "deducao": {
+        "tipo": null,
+        "descricao": null
+      },
+      "obra": null,
+      "evento": null,
+      "infExterior": null,
+      "infPedagio": null,
+      "locacao": null,
+      "ibscbs": null,
+      "tributacaoTotal": null
+    }
+  ]
+}
