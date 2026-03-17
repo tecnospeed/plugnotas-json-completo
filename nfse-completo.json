@@ -1,6 +1,7 @@
 {
-  "padrao": "BETHA",
+  "padrao": "Genérico",
   "idLote": "lote-001",
+  "idIntegracao": "ID-INTEGRACAO-CLIENTE-001",
   "valorServicos": 1000,
   "valorLiquidoNfse": 950,
   "valorTotalServicos": 1000,
@@ -58,13 +59,16 @@
     "cpfCnpj": "12345678000195",
     "inscricaoMunicipal": "12345678",
     "razaoSocial": "Empresa Prestadora Ltda",
+    "nomeFantasia": "Empresa Prestadora",
     "simplesNacional": false,
     "dataVigenciaSimplesNacional": "2024-01-01",
     "anexoSimplesNacional": "III",
     "incentivadorCultural": false,
+    "regimeTributario": 1,
     "regimeTributarioEspecial": 1,
     "incentivoFiscal": false,
     "inscricaoEstadual": "123456789",
+    "certificado": "CERTIFICADO-001",
     "email": "prestador@empresa.com.br",
     "codigoDistrito": "3550308",
     "telefone": {
@@ -81,7 +85,9 @@
       "codigoCidade": "3550308",
       "descricaoCidade": "São Paulo",
       "estado": "SP",
-      "cep": "01310-100"
+      "cep": "01310-100",
+      "codigoPais": "1058",
+      "descricaoPais": "Brasil"
     },
     "config": {
       "prefeitura": {
@@ -94,6 +100,7 @@
   "tomador": {
     "cpfCnpj": "98765432000100",
     "razaoSocial": "Empresa Tomadora S/A",
+    "nomeFantasia": "Empresa Tomadora",
     "inscricaoEstadual": "987654321",
     "inscricaoMunicipal": "87654321",
     "email": "tomador@empresa.com.br",
@@ -117,7 +124,8 @@
       "descricaoCidade": "São Paulo",
       "estado": "SP",
       "cep": "01001-000",
-      "codigoPais": "1058"
+      "codigoPais": "1058",
+      "descricaoPais": "Brasil"
     }
   },
   "intermediario": {
@@ -146,6 +154,7 @@
     "tipo": 1,
     "serie": "A",
     "numero": 1,
+    "lote": 1,
     "dataEmissao": "2024-03-01T10:00:00.000Z",
     "dataEmissaoTz": "-03:00",
     "dataVencimento": "2024-03-31T10:00:00.000Z",
@@ -226,6 +235,7 @@
       "tributavel": true,
       "dataPagamento": "2024-03-10T00:00:00.000Z",
       "codigoCidadeIncidencia": "3550308",
+      "descricaoCidadeIncidencia": "São Paulo",
       "responsavelRetencao": 1,
       "iss": {
         "tipoTributacao": 1,
@@ -533,6 +543,18 @@
           }
         }
       },
+      "ibpt": {
+        "simplificado": {
+          "aliquota": 15
+        },
+        "detalhado": {
+          "aliquota": {
+            "municipal": 5,
+            "estadual": 3,
+            "federal": 7
+          }
+        }
+      },
       "tributacaoTotal": {
         "federal": {
           "valor": 60,
@@ -563,6 +585,7 @@
       "tributavel": true,
       "dataPagamento": null,
       "codigoCidadeIncidencia": "3550308",
+      "descricaoCidadeIncidencia": "São Paulo",
       "responsavelRetencao": 1,
       "iss": {
         "tipoTributacao": 1,
@@ -643,6 +666,7 @@
       "infExterior": null,
       "infPedagio": null,
       "locacao": null,
+      "ibpt": null,
       "ibscbs": null,
       "tributacaoTotal": null
     }
