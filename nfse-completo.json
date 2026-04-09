@@ -10,6 +10,11 @@
   "descontoCondicionado": 0,
   "outrosDescontos": 0,
   "valorDesconto": 0,
+  "tipoAutorizacao": "1",
+  "chaveAcessoNfse": "CHAVE-ACESSO-NFSE-001",
+  "chaveNfseSubstituida": "CHAVE-NFSE-SUBST-001",
+  "codigoMotivoNfseSubstituida": "01",
+  "motivoNfseSubstituida": "Erro de preenchimento",
   "enderecoInformado": true,
   "notaRepasse": false,
   "substituicao": false,
@@ -35,13 +40,23 @@
   "cepPrestacaoServico": "01310-100",
   "enderecoPrestacaoServico": "Avenida Paulista",
   "cidadePrestacao": {
+    "codigo": "3550308",
     "descricao": "São Paulo",
-    "estado": "SP",
-    "cep": "01310-100",
-    "bairro": "Bela Vista",
+    "tipoLogradouro": "Avenida",
+    "logradouro": "Avenida Paulista",
     "numero": "1000",
     "complemento": "Andar 10",
-    "logradouro": "Avenida Paulista"
+    "tipoBairro": "Bairro",
+    "bairro": "Bela Vista",
+    "estado": "SP",
+    "cep": "01310-100",
+    "utilizarDadosTomador": false
+  },
+  "camposExtras": {
+    "copiasEmail": [
+      "copia1@empresa.com.br",
+      "copia2@empresa.com.br"
+    ]
   },
   "modoEnvio": "1",
   "versao": "2",
@@ -60,6 +75,9 @@
     "inscricaoMunicipal": "12345678",
     "razaoSocial": "Empresa Prestadora Ltda",
     "nomeFantasia": "Empresa Prestadora",
+    "nif": "NIF-PRESTADOR-001",
+    "naoNif": "Motivo ausência NIF prestador",
+    "numeroCAEPF": "CAEPF-PRESTADOR-001",
     "simplesNacional": false,
     "dataVigenciaSimplesNacional": "2024-01-01",
     "anexoSimplesNacional": "III",
@@ -68,7 +86,6 @@
     "regimeTributarioEspecial": 1,
     "incentivoFiscal": false,
     "inscricaoEstadual": "123456789",
-    "certificado": "CERTIFICADO-001",
     "email": "prestador@empresa.com.br",
     "codigoDistrito": "3550308",
     "telefone": {
@@ -102,7 +119,9 @@
     "razaoSocial": "Empresa Tomadora S/A",
     "nomeFantasia": "Empresa Tomadora",
     "inscricaoEstadual": "987654321",
+    "indicadorInscricaoEstadual": 1,
     "inscricaoMunicipal": "87654321",
+    "numeroCAEPF": "CAEPF-TOMADOR-001",
     "email": "tomador@empresa.com.br",
     "orgaoPublico": false,
     "nif": "NIF-ESTRANGEIRO-001",
@@ -111,7 +130,9 @@
     "codigoEstrangeiro": "COD-EST-001",
     "telefone": {
       "ddd": "11",
-      "numero": "988888888"
+      "numero": "988888888",
+      "validado": true,
+      "dataValidacao": "2024-01-15T00:00:00.000Z"
     },
     "endereco": {
       "tipoLogradouro": "Rua",
@@ -129,14 +150,19 @@
     }
   },
   "intermediario": {
+    "tipo": 1,
     "cpfCnpj": "11122233000155",
     "razaoSocial": "Intermediário Serviços Ltda",
+    "nomeFantasia": "Intermediário Serviços",
     "inscricaoMunicipal": "11223344",
     "inscricaoEstadual": "112233445",
+    "numeroCAEPF": "CAEPF-INTERMEDIARIO-001",
+    "docEstrangeiro": "DOC-EST-INTERMEDIARIO-001",
     "email": "intermediario@empresa.com.br",
     "nif": "NIF-INTERMEDIARIO-001",
     "naoNif": "Motivo ausência NIF intermediário",
     "telefone": {
+      "ddd": "11",
       "numero": "1133334444"
     },
     "endereco": {
@@ -158,6 +184,17 @@
     "dataEmissao": "2024-03-01T10:00:00.000Z",
     "dataEmissaoTz": "-03:00",
     "dataVencimento": "2024-03-31T10:00:00.000Z",
+    "dataVencimentoTz": "-03:00",
+    "competencia": "2024-03-01T00:00:00.000Z",
+    "competenciaTz": "-03:00",
+    "dataAgendamento": null
+  },
+  "dps": {
+    "id": "DPS-001",
+    "serie": "DPS",
+    "numero": 1,
+    "dataEmissao": "2024-03-01T10:00:00.000Z",
+    "dataEmissaoTz": "-03:00",
     "competencia": "2024-03-01T00:00:00.000Z",
     "competenciaTz": "-03:00"
   },
@@ -182,12 +219,14 @@
   },
   "parcelas": [
     {
+      "quantidadeParcelas": 2,
       "tipoPagamento": 1,
       "numero": 1,
       "dataVencimento": "2024-04-01T00:00:00.000Z",
       "valor": 500
     },
     {
+      "quantidadeParcelas": 2,
       "tipoPagamento": 1,
       "numero": 2,
       "dataVencimento": "2024-05-01T00:00:00.000Z",
@@ -205,16 +244,54 @@
     {
       "forma": 1,
       "tipo": 1,
-      "cpfCnpjReferencia": "11111111000111",
+      "descricao": "Descrição da dedução",
+      "tipoNFReferencia": 1,
+      "chaveNFReferencia": "CHAVE-NF-REF-001",
+      "modeloNFReferencia": "55",
       "numeroNFReferencia": "NF-001",
+      "serieNFReferencia": "1",
+      "codigoVerificacaoReferencia": "COD-VERIF-001",
+      "dataNFReferencia": "2024-02-15T00:00:00.000Z",
       "valorTotalReferencia": 200,
       "percentualDeduzir": 10,
       "valorDeduzir": 50,
+      "codigoCidade": "3550308",
+      "cpfCnpjReferencia": "11111111000111",
       "razaoSocialReferencia": "Fornecedor de Material Ltda",
-      "dataNFReferencia": "2024-02-15T00:00:00.000Z",
+      "referencia": {
+        "inscricaoMunicipal": "99887766",
+        "nif": "NIF-REF-001",
+        "naoNif": "Motivo ausência NIF referência",
+        "numeroCAEPF": "CAEPF-REF-001",
+        "docEstrangeiro": "DOC-EST-REF-001",
+        "razaoSocial": "Fornecedor Referenciado Ltda",
+        "endereco": {
+          "tipoLogradouro": "Rua",
+          "logradouro": "Rua da Referência",
+          "numero": "500",
+          "complemento": "Sala 3",
+          "tipoBairro": "Bairro",
+          "bairro": "Centro",
+          "codigoCidade": "3550308",
+          "descricaoCidade": "São Paulo",
+          "codigoPais": "1058",
+          "descricaoPais": "Brasil",
+          "estado": "SP",
+          "cep": "01001-000"
+        },
+        "telefone": {
+          "ddd": "11",
+          "numero": "912345678"
+        },
+        "email": "referencia@empresa.com.br"
+      },
       "itens": [
         {
+          "idItem": "ITEM-DED-001",
           "descricao": "Item dedução 1",
+          "idUnidade": "UN-001",
+          "unidade": "UN",
+          "quantidade": 1,
           "valor": 50
         }
       ]
@@ -222,7 +299,10 @@
   ],
   "servico": [
     {
+      "idIntegracao": "ID-INTEG-SERVICO-001",
+      "cpfCnpj": "12345678000195",
       "codigo": "14.01",
+      "descricaoLC116": "Análise e desenvolvimento de sistemas",
       "cnae": "6201500",
       "codigoNbs": "1.0307.00.00",
       "codigoServicoNacional": "14.01",
@@ -251,6 +331,7 @@
       },
       "valor": {
         "servico": 1000,
+        "servicoIntermediario": 0,
         "unitario": 1000,
         "baseCalculo": 1000,
         "liquido": 950,
@@ -260,7 +341,8 @@
         "ipi": 0,
         "multa": 0,
         "juros": 0,
-        "percentualDeducoes": 0
+        "percentualDeducoes": 0,
+        "valorAproximadoTributos": 140
       },
       "retencao": {
         "tipoRetencaoPisCofinsCSLL": "1",
@@ -334,6 +416,7 @@
       },
       "evento": {
         "id": "EVT-2024-001",
+        "codigo": "EVT-COD-001",
         "descricao": "Show de música ao vivo",
         "atividade": "Entretenimento",
         "dataInicio": "2024-03-15T00:00:00.000Z",
@@ -379,6 +462,8 @@
         "descricao": "Locação de equipamento industrial",
         "quantidade": 5
       },
+      "informacoesLegais": "Informações legais do serviço",
+      "tributosFederaisRetidos": true,
       "ibscbs": {
         "finalidadeNFSe": 1,
         "operacaoPessoal": false,
@@ -572,7 +657,10 @@
       }
     },
     {
+      "idIntegracao": "ID-INTEG-SERVICO-002",
+      "cpfCnpj": "12345678000195",
       "codigo": "17.01",
+      "descricaoLC116": "Assessoria e consultoria em informática",
       "cnae": "7319099",
       "codigoNbs": "1.0503.00.00",
       "codigoServicoNacional": "17.01",
@@ -601,6 +689,7 @@
       },
       "valor": {
         "servico": 500,
+        "servicoIntermediario": 0,
         "unitario": 250,
         "baseCalculo": 500,
         "liquido": 475,
@@ -610,7 +699,8 @@
         "ipi": 0,
         "multa": 0,
         "juros": 0,
-        "percentualDeducoes": 0
+        "percentualDeducoes": 0,
+        "valorAproximadoTributos": 0
       },
       "retencao": {
         "tipoRetencaoPisCofinsCSLL": null,
@@ -666,6 +756,8 @@
       "infExterior": null,
       "infPedagio": null,
       "locacao": null,
+      "informacoesLegais": null,
+      "tributosFederaisRetidos": true,
       "ibpt": null,
       "ibscbs": null,
       "tributacaoTotal": null
