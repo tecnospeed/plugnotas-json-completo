@@ -389,6 +389,17 @@
           "retido": false
         }
       },
+      "apuracaoPropria": {
+        "pis": {
+          "valor": 6.5,
+          "aliquota": 0.65
+        },
+        "cofins": {
+          "valor": 30,
+          "aliquota": 3
+        },
+        "baseCalculoPisCofins": 1000
+      },
       "deducao": {
         "tipo": 1,
         "descricao": "Justificativa da dedução do serviço"
@@ -747,6 +758,7 @@
           "retido": false
         }
       },
+      "apuracaoPropria": null,
       "deducao": {
         "tipo": null,
         "descricao": null
