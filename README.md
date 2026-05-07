@@ -4,8 +4,8 @@ Repositório com os exemplos de payload JSON para emissão de Notas Fiscais de S
 
 ## Padrões Disponíveis
 
-- **Genérico** (`exemplo-generico.json`) — Utilizado para municípios com layout próprio de comunicação com a prefeitura.
-- **NACIONAL** (`exemplo-nacional.json`) — Utilizado para municípios aderentes ao padrão nacional (NFS-e Nacional).
+- **NFSe-GENÉRICO** (`nfse-completo.json`) — Utilizado para municípios com layout próprio de comunicação com a prefeitura.
+- **NFSe-NACIONAL** (`nfse-nacional-completo.json`) — Utilizado para municípios aderentes ao padrão nacional (NFS-e Nacional).
 
 ## Estrutura Resumida
 
