@@ -22,6 +22,15 @@
   "informacoesComplementares": "Informações complementares da nota",
   "descricao": "Descrição do RPS",
   "naturezaTributacao": 1,
+  "idDocTec": "DOC-TEC-001",
+  "docReferencia": "DOC-REF-001",
+  "enviarEmail": false,
+  "impressao": {
+    "camposCustomizados": {
+      "campoCustom1": "valor1",
+      "campoCustom2": "valor2"
+    }
+  },
   "aliquotaSimplesNacional": 5,
   "aliquotaServico": 5,
   "retidoPis": false,
@@ -390,6 +399,7 @@
         }
       },
       "apuracaoPropria": {
+        "cstPisCofins": "01",
         "pis": {
           "valor": 6.5,
           "aliquota": 0.65
@@ -480,10 +490,12 @@
         "operacaoPessoal": false,
         "codigoOperacao": "OP-001",
         "tipoOperacao": 1,
+        "indicadorOperacao": true,
         "tipoEnteGovernamental": 1,
         "descTipoEnteGovernamental": "Descrição do tipo ente governamental",
-        "municipioIncidencia": "3550308",
+        "municipioIncidenciaIbsCbs": 3550308,
         "PagamentoParceladoAntecipado": false,
+        "pagamentoParceladoAntecipado": false,
         "referenciasNFSe": [
           {
             "chave": "CHAVE-NFSE-REF-001"
