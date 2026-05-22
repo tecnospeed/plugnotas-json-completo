@@ -783,7 +783,172 @@
       "informacoesLegais": null,
       "tributosFederaisRetidos": true,
       "ibpt": null,
-      "ibscbs": null,
+      "ibscbs": {
+        "finalidadeNFSe": 1,
+        "operacaoPessoal": false,
+        "codigoOperacao": "OP-002",
+        "tipoOperacao": 1,
+        "indicadorOperacao": true,
+        "tipoEnteGovernamental": 1,
+        "descTipoEnteGovernamental": "Descrição do tipo ente governamental",
+        "municipioIncidenciaIbsCbs": 3550308,
+        "PagamentoParceladoAntecipado": false,
+        "pagamentoParceladoAntecipado": false,
+        "referenciasNFSe": [
+          {
+            "chave": "CHAVE-NFSE-REF-002"
+          }
+        ],
+        "destinatario": {
+          "indicador": 1,
+          "cpfCnpj": "22233344000122",
+          "nif": "NIF-DEST-002",
+          "naoNif": "Motivo ausência NIF destinatário",
+          "razaoSocial": "Destinatário IBS/CBS Ltda",
+          "codigoEstrangeiro": "COD-EST-DEST-002",
+          "email": "destinatario2@empresa.com.br",
+          "telefone": {
+            "ddd": "11",
+            "numero": "977777777"
+          },
+          "endereco": {
+            "logradouro": "Rua do Destinatário 2",
+            "numero": "200",
+            "complemento": "Bloco C",
+            "bairro": "Vila Destinatário",
+            "codigoCidade": "3550308",
+            "descricaoCidade": "São Paulo",
+            "cep": "05050-050",
+            "codigoPais": "1058",
+            "codigoPostalExterior": "10001",
+            "estadoProvinciaRegiao": "SP",
+            "estado": "SP",
+            "regiao": "Sudeste"
+          }
+        },
+        "imovel": {
+          "inscricaoFiscal": "INSCR-FISCAL-002",
+          "codigoCIB": "CIB-002",
+          "codigoObra": "OBRA-IMOVEL-002",
+          "endereco": {
+            "logradouro": "Rua do Imóvel 2",
+            "numero": "500",
+            "complemento": "Casa 3",
+            "bairro": "Vila Imóvel",
+            "cep": "06060-060",
+            "codigoCidade": "3550308",
+            "descricaoCidade": "São Paulo",
+            "estado": "SP",
+            "codigoPais": "1058",
+            "estadoProvinciaRegiao": "SP",
+            "codigoPostalExterior": "10001",
+            "regiao": "Sudeste"
+          }
+        },
+        "valores": {
+          "baseCalculo": 500,
+          "aliquotaIbsMunicipal": 2,
+          "aliquotaIbsEstadual": 3,
+          "aliquotaCbs": 5,
+          "valorIbsMunicipal": 10,
+          "valorIbsEstadual": 15,
+          "valorCbs": 25,
+          "tributacao": {
+            "cst": "01",
+            "cct": "CCT-002",
+            "codigoCreditoPresumido": "CRED-PRES-002",
+            "regular": {
+              "cst": "01",
+              "cct": "CCT-REG-002"
+            },
+            "diferimento": {
+              "percentualEstadual": 10,
+              "percentualMunicipal": 10,
+              "percentualCBS": 5
+            }
+          },
+          "operacao": {
+            "documentosReferenciados": [
+              {
+                "nacional": {
+                  "tipoChave": 1,
+                  "descricaoChave": "Descrição chave DFe",
+                  "chave": "CHAVE-DFe-002"
+                },
+                "fiscal": {
+                  "codigoCidade": "3550308",
+                  "numero": "NF-FISCAL-002",
+                  "descricao": "Nota fiscal referenciada"
+                },
+                "naoFiscal": {
+                  "numero": "DOC-NAOFISCAL-002",
+                  "descricao": "Documento não fiscal referenciado"
+                },
+                "fornecedor": {
+                  "cpfCnpj": "33344455000133",
+                  "nif": "NIF-FORN-002",
+                  "naoNif": "Motivo ausência NIF fornecedor",
+                  "razaoSocial": "Fornecedor Referenciado Ltda"
+                },
+                "dataEmissao": "2024-02-01T00:00:00.000Z",
+                "competencia": "2024-02-01T00:00:00.000Z",
+                "tipoOperacao": 1,
+                "descricaoOperacao": "Descrição do valor dedutível",
+                "valorOperacao": 50
+              }
+            ]
+          },
+          "resumo": {
+            "ibsMunicipal": {
+              "percentualReducao": 5,
+              "aliquotaEfetiva": 1.9
+            },
+            "ibsEstadual": {
+              "percentualReducao": 5,
+              "aliquotaEfetiva": 2.85
+            },
+            "cbsFederal": {
+              "percentualReducao": 5,
+              "aliquotaEfetiva": 4.75
+            },
+            "totalizador": {
+              "valorIbsCbs": 50,
+              "percentualReducaoIbsCbs": 5,
+              "valorDeducoesIbsCbs": 5,
+              "ibs": {
+                "valor": 25,
+                "valorDiferimentoMunicipal": 2.5,
+                "valorDiferimentoEstadual": 2.5,
+                "percentualCreditoPresumido": 2,
+                "valorCreditoPresumido": 5
+              },
+              "cbs": {
+                "valorDiferimento": 2.5,
+                "percentualCreditoPresumido": 2,
+                "valorCreditoPresumido": 5
+              },
+              "regular": {
+                "aliquotaEfetivaEstadual": 2.85,
+                "aliquotaEfetivaMunicipal": 1.9,
+                "valorIbsMunicipal": 9.5,
+                "valorIbsEstadual": 14.25,
+                "aliquotaEfetivaCbs": 4.75,
+                "valorCbs": 23.75
+              },
+              "compraGovernamental": {
+                "percentualIbsMunicipal": 10,
+                "valorIbsMunicipal": 1,
+                "percentualIbsEstadual": 10,
+                "valorIbsEstadual": 1.5,
+                "percentualCbs": 10,
+                "valorCbs": 2.5,
+                "percentualReducao": 5,
+                "valorPercentualReducao": 0.25
+              }
+            }
+          }
+        }
+      },
       "tributacaoTotal": null
     }
   ]
