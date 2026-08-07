@@ -44,6 +44,7 @@
   "issRetidoIntermediario": false,
   "descontoIncondicionadoServico": 0,
   "paisPrestacao": "1058",
+  "paisResultado": "1058",
   "cidadePrestacaoServico": "São Paulo",
   "estadoPrestacaoServico": "SP",
   "cepPrestacaoServico": "01310-100",
@@ -770,19 +771,105 @@
           "retido": false
         }
       },
-      "apuracaoPropria": null,
-      "deducao": {
-        "tipo": null,
-        "descricao": null
+      "apuracaoPropria": {
+        "cstPisCofins": "01",
+        "pis": {
+          "valor": 3.25,
+          "aliquota": 0.65
+        },
+        "cofins": {
+          "valor": 15,
+          "aliquota": 3
+        },
+        "baseCalculoPisCofins": 500
       },
-      "obra": null,
-      "evento": null,
-      "infExterior": null,
-      "infPedagio": null,
-      "locacao": null,
-      "informacoesLegais": null,
+      "deducao": {
+        "tipo": 2,
+        "descricao": "Justificativa da dedução do segundo serviço"
+      },
+      "obra": {
+        "nome": "Obra Comercial ABC",
+        "art": "ART-2024-002",
+        "cei": "CEI-654321",
+        "inscricaoImobFisc": "INSCR-IMO-002",
+        "inf": "Informações adicionais da segunda obra",
+        "opcao": 2,
+        "codigo": "OBRA-COD-002",
+        "endereco": {
+          "logradouro": "Rua da Edificação",
+          "numero": "400",
+          "bairro": "Jardim Comercial",
+          "complemento": "Terreno B",
+          "codigoCidade": "3550308",
+          "descricaoCidade": "São Paulo",
+          "estado": "SP",
+          "cep": "04320-000",
+          "codigoPais": "1058",
+          "regiao": "Sudeste"
+        }
+      },
+      "evento": {
+        "id": "EVT-2024-002",
+        "codigo": "EVT-COD-002",
+        "descricao": "Congresso técnico",
+        "atividade": "Capacitação",
+        "dataInicio": "2024-04-10T00:00:00.000Z",
+        "dataFim": "2024-04-11T00:00:00.000Z",
+        "endereco": {
+          "cep": "01310-300",
+          "codigoCidade": "3550308",
+          "estado": "SP",
+          "bairro": "Bela Vista",
+          "logradouro": "Avenida Paulista",
+          "numero": "1200",
+          "complemento": "Sala de Convenções",
+          "descricaoCidade": "São Paulo",
+          "regiao": "Sudeste"
+        }
+      },
+      "infExterior": {
+        "modoPrestacao": 2,
+        "vinculoPrestacao": 2,
+        "tipoMoeda": "EUR",
+        "valorServicos": 100,
+        "tipoFomentoPrestador": "2",
+        "tipoFomentoTomador": "2",
+        "tipoMovimentacaoBens": 2,
+        "numeroDeclaracaoImp": "DI-2024-002",
+        "numeroRegistroExp": "RE-2024-002",
+        "tipoMDIC": 2,
+        "categoriaServico": "2",
+        "tipoObjeto": "CONSULTORIA",
+        "extensaoObjeto": ".pdf",
+        "numeroPostes": "20"
+      },
+      "infPedagio": {
+        "tipoVeiculoCobranca": 2,
+        "numeroEixos": 3,
+        "tipoRodagem": 2,
+        "sentidoGeografico": "Leste-Oeste",
+        "placaVeiculo": "DEF5678",
+        "codigoAcessoPedido": "ACESSO-002",
+        "codigoContratoPedido": "CONTRATO-002"
+      },
+      "locacao": {
+        "descricao": "Locação de equipamento de informática",
+        "quantidade": 3
+      },
+      "informacoesLegais": "Informações legais do segundo serviço",
       "tributosFederaisRetidos": true,
-      "ibpt": null,
+      "ibpt": {
+        "simplificado": {
+          "aliquota": 12
+        },
+        "detalhado": {
+          "aliquota": {
+            "municipal": 4,
+            "estadual": 2,
+            "federal": 6
+          }
+        }
+      },
       "ibscbs": {
         "finalidadeNFSe": 1,
         "operacaoPessoal": false,
@@ -949,7 +1036,21 @@
           }
         }
       },
-      "tributacaoTotal": null
+      "tributacaoTotal": {
+        "federal": {
+          "valor": 30,
+          "valorPercentual": 6
+        },
+        "estadual": {
+          "valor": 15,
+          "valorPercentual": 3
+        },
+        "municipal": {
+          "valor": 25,
+          "valorPercentual": 5
+        },
+        "aliquotaSimplesNacional": 5
+      }
     }
   ]
 }
